@@ -1,4 +1,3 @@
-<script src="js/jquery.js"></script>
   Author: <input type="text" name="auth" id = "auth"><br>
   Content: <input type="text" name="content" id ="content"><br>
 <input type="submit" value="Submit" id = "Submit">

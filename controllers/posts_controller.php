@@ -23,9 +23,25 @@
         $author = $_POST['auth'];
         $content = $_POST['content'];
         $return = Post::save($author,$content);
-          if($return){
-            echo json_encode(array('success'=>true));
-          }
+        if($return){
+          echo json_encode(array('success'=>true));
+        }
+    }
+     public function update() {
+        $author = $_POST['auth'];
+        $content = $_POST['content'];
+        $id = $_POST['id'];
+        $return = Post::update($author,$content,$id);
+        if($return){
+          echo json_encode(array('success'=>true));
+        }
+    }
+    public function delete() {
+        $id = $_POST['id'];
+        $return = Post::delete($id);
+        if($return){
+          echo json_encode(array('success'=>true));
+        }
     }
   }
 ?>

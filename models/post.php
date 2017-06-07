@@ -45,6 +45,24 @@
         
         return $req;
       }
+       public static function update($author,$content,$id) {
+        $db = Db::getInstance();
+        // we make sure $id is an integer
+        $req = $db->prepare('UPDATE posts set author = :author, content = :content where id = :id');
+        // the query was prepared, now we replace :id with our actual $id value
+        $req->execute(array('author' => $author,'content' => $content,'id' => $id));
+        
+        return $req;
+      }
+       public static function delete($id) {
+        $db = Db::getInstance();
+        // we make sure $id is an integer
+        $req = $db->prepare('DELETE from posts where id = :id');
+        // the query was prepared, now we replace :id with our actual $id value
+        $req->execute(array('id' => $id));
+        
+        return $req;
+      }
 
   }
 ?>
