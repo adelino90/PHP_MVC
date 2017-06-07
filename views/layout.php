@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
   <head>
-  <title>E-Bulettin Website</title>
+  <title>PHP MVC</title>
   <link rel="stylesheet" type="text/css"href="css/bootstrap.css">
   <script src="js/bootstrap.min.js"></script>
    <script src="js/jquery.js"></script>
