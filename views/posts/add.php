@@ -1,7 +1,13 @@
-  Author: <input type="text" name="auth" id = "auth"><br>
-  Content: <input type="text" name="content" id ="content"><br>
-<input type="submit" value="Submit" id = "Submit">
-
+<div class="row">
+    <div class="col-md-3 col-md-offset-3">
+        <label for="email">Author: </label>
+        <input type="text" class="form-control" name="auth" id = "auth"><br>
+        <label for="email">Content:</label>
+        <input type="text" class="form-control" name="content" id ="content"><br>
+        <input type="submit" class="btn btn-default" value="Submit" id = "Submit">
+    
+    </div>
+</div>
 
 
 

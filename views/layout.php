@@ -7,6 +7,7 @@
    <script src="js/jquery.js"></script>
   </head>
   <body>
+    <div class="container">
     <header>
         <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -14,7 +15,7 @@
               <a class="navbar-brand" href='?controller=pages&action=home'>Home</a>
             </div>
             <ul class="nav navbar-nav">
-              <li class="active"><a href='?controller=pages&action=home'>Home</a></li>
+              <li><a href='?controller=pages&action=home'>Home</a></li>
               <li><a href='?controller=posts&action=index'>Posts</a></li>
     
             </ul>
@@ -24,8 +25,9 @@
 
     <?php require_once('routes.php'); ?>
 
-    <footer>
+    <footer class="text-center">
       Copyright
     </footer>
+    </div>
   <body>
 </html>
