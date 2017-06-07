@@ -18,7 +18,10 @@ $( "#Submit" ).click(function() {
       data: data,
       success:function(response){
         response = $.parseJSON(response);
-       console.log(response);
+          if(response.success){
+            alert("Added!!");
+            window.location = "?controller=posts&action=index";
+          }
       }
     });
 });
