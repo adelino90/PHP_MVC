@@ -20,12 +20,12 @@
       require_once('views/posts/add.php');
     }
       public function save() {
- 
         $author = $_POST['auth'];
         $content = $_POST['content'];
         $return = Post::save($author,$content);
-        if($return)
-          header('Location:?controller=posts&action=index');
+          if($return){
+            echo json_encode(array('return'=>$return));
+          }
     }
   }
 ?>
