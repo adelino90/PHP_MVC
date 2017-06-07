@@ -1,0 +1,49 @@
+body{
+background: #dbdbdb;
+}
+.left-side ,.newsome{
+background:#ffffff;	
+}
+.col1{
+background: #5C7080;
+}
+.col2{
+background: #6BC0FF;
+}
+.col3{
+background: #FF0000;
+}
+.col4{
+background: #800000;
+}
+.col5{
+background: #FFFF00;
+}
+.col6{
+background: #FFA07A;
+}
+.first-row{
+margin-top:2%;	
+	
+}
+.newsome{
+height:500px;
+border:1px solid black ;	
+	
+}
+.left-side{
+left:10px;	
+	border:1px solid black ;
+}
+.test{
+font-size:12px;	
+}
+.left-side-row{	
+
+margin-left:3px;
+}
+.left-side-content{
+	border:1px solid black ;
+	
+}
+
