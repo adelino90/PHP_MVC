@@ -24,10 +24,11 @@
     </header>
 
     <?php require_once('routes.php'); ?>
-
-    <footer class="text-center">
-      Copyright
-    </footer>
+    <div class="col-md-12">
+      <footer class="text-center">
+        Copyright
+      </footer>
+    </div>
     </div>
   <body>
 </html>

@@ -6,7 +6,7 @@
         $pass = $_POST['pass'];
         $return = Login::login($user,$pass);
         if($return > 0){
-            header('Location: ?controller=posts&action=index');
+            header('Location: ?controller=pages&action=home');
         }
         else
             header('Location: ?controller=pages&action=login');
